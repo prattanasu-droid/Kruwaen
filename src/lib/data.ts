@@ -1,0 +1,12 @@
+export type Media={id:string;title:string;subject:string;grade:string;type:string;description:string;image:string;url?:string;file?:string;fileName?:string;created:string;featured?:boolean;sample?:boolean};
+export const subjects=['ภาษาไทย','คณิตศาสตร์','วิทยาศาสตร์','ภาษาอังกฤษ','สังคมศึกษา','ศิลปะ','การงานอาชีพ','สุขศึกษา','ประวัติศาสตร์','หน้าที่พลเมือง'];
+export const grades=['อนุบาล 1','อนุบาล 2','อนุบาล 3','ป.1','ป.2','ป.3','ป.4','ป.5','ป.6','ม.1','ม.2','ม.3','ม.4','ม.5','ม.6'];
+export const types=['ใบงาน','สไลด์การสอน','เกมการเรียนรู้','วิดีโอ','สื่อสร้างสรรค์'];
+export const samples:Media[]=[
+{id:'sample-1',title:'สนุกกับเศษส่วน ชวนคิดชวนลอง',subject:'คณิตศาสตร์',grade:'ป.4',type:'ใบงาน',description:'ใบงานฝึกอ่านและเปรียบเทียบเศษส่วนจากภาพ เหมาะสำหรับกิจกรรมในห้องเรียนหรือทบทวนด้วยตนเอง พร้อมพื้นที่ให้นักเรียนระบายสีและเขียนคำตอบ',image:'/covers/fractions.svg',file:'/worksheets/fractions.svg',created:'2026-11-08',featured:true,sample:true},
+{id:'sample-2',title:'สำรวจโลกของพืชรอบตัวเรา',subject:'วิทยาศาสตร์',grade:'ป.3',type:'ใบงาน',description:'ชวนเด็ก ๆ สังเกตส่วนประกอบของพืช ระบุหน้าที่ของราก ลำต้น ใบ และดอก พร้อมวาดภาพต้นไม้ที่พบใกล้ตัว',image:'/covers/plants.svg',file:'/worksheets/plants.svg',created:'2026-11-07',featured:true,sample:true},
+{id:'sample-3',title:'ABC สนุกจำ คำศัพท์สัตว์น่ารัก',subject:'ภาษาอังกฤษ',grade:'ป.1',type:'ใบงาน',description:'เรียนรู้คำศัพท์สัตว์ภาษาอังกฤษด้วยกิจกรรมจับคู่ภาพและคำศัพท์ ฝึกอ่านออกเสียงและเติมตัวอักษรที่หายไป',image:'/covers/animals.svg',file:'/worksheets/animals.svg',created:'2026-11-06',sample:true},
+{id:'sample-4',title:'อ่านสนุก ฝึกประสมคำ สระอา',subject:'ภาษาไทย',grade:'ป.1',type:'ใบงาน',description:'ฝึกอ่านและเขียนคำที่ประสมด้วยสระอา ด้วยกิจกรรมคัดคำ เติมคำ และแต่งประโยคสั้น ๆ',image:'/covers/thai.svg',file:'/worksheets/thai.svg',created:'2026-11-05',sample:true},
+{id:'sample-5',title:'สีสันสร้างสรรค์ เรียนรู้แม่สี',subject:'ศิลปะ',grade:'ป.2',type:'ใบงาน',description:'ทำความรู้จักแม่สีและการผสมสี ผ่านแบบฝึกทดลองระบายสี ให้นักเรียนค้นพบสีใหม่ด้วยตนเอง',image:'/covers/colors.svg',file:'/worksheets/colors.svg',created:'2026-11-04',sample:true},
+{id:'sample-6',title:'รู้จักชุมชนของเรา',subject:'สังคมศึกษา',grade:'ป.2',type:'ใบงาน',description:'สำรวจสถานที่สำคัญและอาชีพในชุมชน ฝึกวาดแผนที่ง่าย ๆ พร้อมเรียนรู้การอยู่ร่วมกันอย่างมีความสุข',image:'/covers/community.svg',file:'/worksheets/community.svg',created:'2026-11-03',sample:true},
+];
