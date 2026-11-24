@@ -7,6 +7,7 @@ export function normalizeResourceUrl(value:unknown):string|null{
 export function resourceAction(type:string){
  if(type==='เกมการเรียนรู้'||type==='เกมการศึกษา')return {label:'เล่นเกม',fieldLabel:'ลิงก์เกมการศึกษา',kind:'game'} as const;
  if(type==='วิดีโอ')return {label:'ดูวิดีโอ',fieldLabel:'ลิงก์วิดีโอ',kind:'video'} as const;
+ if(type==='สื่อสร้างสรรค์')return {label:'เปิดดู',fieldLabel:'ลิงก์สื่อการเรียนรู้',kind:'view'} as const;
  return {label:'ดาวน์โหลดสื่อ',fieldLabel:'ลิงก์สื่อการเรียนรู้',kind:'download'} as const;
 }
 export function mediaHref(media:Pick<Media,'url'|'file'>):string|null{
